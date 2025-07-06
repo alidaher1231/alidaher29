@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+    <title>Document</title>
+</head>
+<body class="">
+    </div>
+
+    <header class=" container  xl:flex xl:justify-around py-6 justify-center ">
+        <img class="w-[140px] ml-2" src="./assests/logo.svg" alt="">
+        <div class="hidden xl:flex list-none space-x-5   ">
+                <li><a class="hover:text-orange-500" href="#">Pricing</a></li>
+                <li><a class="hover:text-orange-500" href="#">Product</a></li>
+                <li><a class="hover:text-orange-500" href="#">About Us</a></li>
+                <li><a class="hover:text-orange-500" href="#">Careers</a></li>
+                <li><a class="hover:text-orange-500" href="#">Community</a></li>
+                <div class="">
+                    <a class="bg-orange-500 px-5 py-2 rounded-full baseline text-white hover:bg-transparent md:block hover:text-black hover:border hover:border-orange-500 ml-48 relative bottom-2 " href="">Get Started</a>
+                </div>  
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+        </div>
+        <div class="md:hidden">
+            <div id="menu" class="flex text-xs font-bold  xl:hidden space-x-6 items-center drop-shadow-md  mt-4 justify-center ">
+            <a class="hover:text-orange-500" href="#">Pricing</a>
+            <a class="hover:text-orange-500" href="">Product</a>
+            <a class="hover:text-orange-500" href="">About Us</a>
+            <a class="hover:text-orange-500" href="">Careers</a>
+            <a class="hover:text-orange-500" href="">Community</a>
+        </div>
+        </div>
+        
+        
+    </header>
+    
+    <section id="hero" class="">
+     <div class="xl:flex relative right-16 ">
+    <div class="flex flex-col  md:w-1/2 ml-28 space-y-12  mt-10 mb-32">
+        <h1 class=" max-w-md text-xl xl:text-4x md:text-5xl font-bold md:text-left">Bring everyone together to build better products.</h1>
+        <p class="text-gray-500 text-center md:text-left text-xl">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <div>
+        <a class="bg-orange-500 px-5 py-2 rounded-full text-white hover:bg-transparent hover:text-black hover:border hover:border-orange-500" href="">Get Started</a>
+    </div>
+    </div>  
+    <div class=" md:w-1/2 mt-20 relative left-20">
+        <img src="./assests/illustration-intro.svg" alt="">
+    </div>
+</section>
+<section class="xl:flex relative  right-10">
+    <div class="flex flex-col md:w-1/3 space-y-12 ml-28 mt-10">
+        <h2 class="font-bold text-3xl">What's difference about <br> Manage?</h2>
+        <p class="text-gray-500  text-xl">Manage provides all the functionality your team need, without the complexity. Our software is tailor-made for modern digital product teams. </p>
+    </div>
+    <div class="flex flex-col md:w-1/3 ml-48 mt-10">
+        <ol class="space-y-12 ">
+            <li class="space-y-4 "> 
+                <span class="bg-orange-500 px-5 text-white py-1 rounded-full relative right-20 top-11">01</span> 
+                <h3 class="font-bold text-xl">Track company-wide progress</h3>
+                <p class="text-left text-gray-500">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+            </li>
+            <li class="space-y-4">
+                <span class="bg-orange-500 px-5 text-white py-1 rounded-full relative right-20 top-11 ">02</span> 
+                <h3 class="font-bold text-xl">Advanced built-in reports</h3>
+                <p class="text-gray-500">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key
+                    stakeholders informed.</p>
+                </li>
+                <li class="space-y-4">
+                    <span class="bg-orange-500 px-5 text-white py-1 rounded-full relative right-20 top-11 ">03</span> 
+                    <h3 class="font-bold text-xl">Everything you need in one place</h3>
+                    <p class="text-gray-500"> Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manag offers an all-in-one team productivity solution.
+                        </p>
+                </li>
+        </ol>
+    </div>
+</section>
+
+<div class="flex flex-col ">
+<section class="xl:flex items-center justify-around mt-10 space-y-12">
+    <div class="md:w-1/5 shadow-md h-96 flex flex-col items-center relative top-6" >
+        <img src="./assests/avatar-anisha.png" alt="">
+        <label for="">Anisha Li</label>
+        <p class="text-center mt-5">"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
+    </div>
+    <div class="md:w-1/5 shadow-md h-96 flex flex-col items-center" >
+        <img src="./assests/avatar-ali.png" alt="">
+        <label for="">Ali Bravo</label>
+        <p class="text-center mt-5">"We have been able to cancel so many other subscriptions since using Manage.
+            There is no more cross-channel confusion ande every one is much more focused."</p>
+        </div>
+        <div class="md:w-1/5 h-96 shadow-md flex flex-col items-center" >
+        <img src="./assests/avatar-richard.png" alt="">
+        <label for="">Richard Watts</label>
+        <p class="text-center mt-5">"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"</p>
+    </div>
+    <div class="md:w-1/5 h-96 shadow-md flex flex-col items-center" >
+        <img src="./assests/avatar-shanai.png" alt="">
+        <label for="">Shanai Gough</label>
+        <p class="text-center mt-5">"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whate team insync whitout being intrusive."</p>
+    </div>
+
+</section>
+<div class="text-center mt-10">
+<a class="bg-orange-500 px-5 py-2 rounded-full text-white hover:bg-transparent hover:text-black hover:border hover:border-orange-500" href="">Get Started</a>
+</div>
+</div>
+
+<footer class="flex flex-col">
+    <div class="xl:flex justify-between xl:w-[1200px]  xl:h-[150px] w-1/2 flex ml-32 mt-4 bg-orange-500 xl:ml-20 xl:mt-10">
+        <div class="flex items-center justify-center">
+        <h1 class="text-white font-bold text-5xl text-left">Simplify how your team <br>works today.</h1>
+        <div class="px-10 relative left-[480px]">
+        <a class="bg-white px-5 py-2 rounded-full text-orange-500 hover:bg-transparent hover:text-white hover:border hover:border-white" href="">Get Started</a>
+        </div></div>
+    </div>
+    <div class="xl:flex xl:w-[1200px] xl:h-[200px] w-1/2 bg-gray-800 xl:ml-20 ml-32 justify-around items-center">
+        <div class="xl:flex xl:flex-col xl:justify-around space-y-24">
+        <img class="mt-2 ml-5" src="./assests/logo-white.svg" alt="">
+        <div class="flex space-x-3 ml-5"><img src="./assests/icon-facebook.svg" alt="">
+            <img src="./assests/icon-youtube.svg" alt="">
+            <img src="./assests/icon-twitter.svg" alt="">
+            <img src="./assests/icon-pinterest.svg" alt="">
+            <img src="./assests/icon-instagram.svg" alt="">
+            </div>
+        </div>
+            <div class="text-white ml-5">
+                <li><a class="hover:text-orange-500" href="">Home</a></li>
+                <li><a class="hover:text-orange-500" href="">Pricing</a></li>
+                <li><a class="hover:text-orange-500" href="">Products</a></li>
+                <li><a class="hover:text-orange-500" href="">About Us</a></li>
+            </div>
+            <div class="text-white ml-5">
+                <li><a class="hover:text-orange-500" href="">Careers</a></li>
+                <li><a class="hover:text-orange-500" href="">Community</a></li>
+                <li><a class="hover:text-orange-500" href="">Privacy Policy</a></li>
+            </div>
+            <div class="xl:flex xl:flex-col xl:space-y-24 ml-5">
+                <div class="xl:flex  xl:space-x-12  xl:ml-10 xl:items-center ">
+                <input class="rounded-full py-1 text-xs px-3" value="Updates in your inbox" type="search">
+                <div><a class="bg-orange-500 relative top-2 px-7 py-2 rounded-full text-white hover:bg-transparent hover:border hover:border-orange-500" href="">Go</a></div>
+            </div>
+                <p class="text-white xl:text-sm text-xs mt-24  font-thin ml-3 relative bottom-10">Copyright 2020 All Rights Reserved</p>
+            </div>
+
+
+
+
+    </div>
+
+</footer>
+</body>
+
+</html>
